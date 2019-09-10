@@ -94,7 +94,7 @@ export default {
   mounted:function(){
     
         this.getDatas();
-       console.log( this.$route.query.id)
+       console.log( this.$route.query)
   }
  }
 </script>
