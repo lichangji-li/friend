@@ -1,11 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
+<<<<<<< HEAD
 import Collect from "./views/collect.vue";
+
+=======
 import User from './views/User.vue'
 import UserCompile from './views/UserCompile.vue'
 import Vip from './views/Vip.vue'
 import FreeVip from './views/freeVip.vue'
+>>>>>>> 4d0d6fbaff111251a1cb89da7239f894f412b609
 Vue.use(Router)
 
 export default new Router({
@@ -18,6 +22,7 @@ export default new Router({
       component: Home
     },
     {
+<<<<<<< HEAD
       path: '/about',
       name: 'about',
       // route level code-splitting
@@ -29,7 +34,7 @@ export default new Router({
       path: '/collect',
       name: 'collect',
       component: Collect
-    },{
+=======
       path: '/user',
       name: 'User',
       component: User
@@ -48,6 +53,7 @@ export default new Router({
       path: '/freevip',
       name: 'FreeVip',
       component: FreeVip
+>>>>>>> 4d0d6fbaff111251a1cb89da7239f894f412b609
     }
   ]
 })

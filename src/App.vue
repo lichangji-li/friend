@@ -14,8 +14,19 @@
   };
   </script>
 <style lang="scss">
-*{margin:0;padding: 0;}
-li{list-style:none;}
+  *{
+    margin: 0;
+    padding: 0;
+    img{
+      display: block;
+    }
+    a{
+      text-decoration: none;
+    }
+    ul,li{
+      list-style: none;
+    }
+  }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
