@@ -6,6 +6,8 @@ import User from './views/User.vue'
 import UserCompile from './views/UserCompile.vue'
 import Vip from './views/Vip.vue'
 import FreeVip from './views/freeVip.vue'
+import Nearby from './views/Nearby/index.vue'
+import Screen from './views/Nearby/Screen.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -48,6 +50,19 @@ export default new Router({
       path: '/freevip',
       name: 'FreeVip',
       component: FreeVip
+    },
+    {
+      path: '/nearby',
+      name: 'nearby',
+      component: Nearby,
+
+
+
+    },
+    {
+      path: '/screen',
+      name: 'screen',
+      component: Screen
     }
   ]
 })
