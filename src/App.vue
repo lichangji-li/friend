@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-<<<<<<< HEAD
+
       <router-view></router-view>
-=======
-    <router-view/>
+
+    
     <FooterTab></FooterTab>
->>>>>>> 76b8694828d1d22a57eab1560c2c9a2faa482dd8
+
   </div>
 </template>
 <script>
@@ -41,13 +41,13 @@
 .mu-elevation-4{
     box-shadow: none!important;
 }
-<<<<<<< HEAD
 
-=======
+
+
 .router-link-active{
   &>i{
     background-position-x: -63px !important;
   }
 }
->>>>>>> 76b8694828d1d22a57eab1560c2c9a2faa482dd8
+
 </style>
