@@ -122,7 +122,7 @@
                 getUserDataById(1).then((res)=> {
                     this.allData = res.data[0];
                     this.hearImg = res.data[0].imgs[0];
-                    console.log(this.hearImg);
+                    //console.log(this.hearImg);
                     //console.log(this.allData.data[0].imgs[0]);
                 })
             }
@@ -256,5 +256,8 @@
             }
         }
     }
+    }
+    .box{
+        margin-bottom: 158px;
     }
 </style>

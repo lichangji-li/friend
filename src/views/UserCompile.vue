@@ -188,6 +188,8 @@
 <style scoped lang="scss">
     .box{
         overflow: hidden;
+        margin-bottom: 158px;
+
     }
 .head{
     width: 750px;height: 176px;border: 1px solid #a9a9a9;

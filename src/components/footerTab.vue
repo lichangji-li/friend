@@ -22,7 +22,7 @@
         </router-link>
       </li>
       <li>
-        <router-link to="/myself">
+        <router-link to="/user">
         <i></i>
         </router-link>
       </li>
@@ -45,6 +45,7 @@ export default {
     position:fixed;
     bottom: 0;
     padding-top:30px;
+  z-index: 888;
 }
 .footerTab li:nth-of-type(1) i{
     height:50px;

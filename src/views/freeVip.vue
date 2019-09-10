@@ -74,9 +74,11 @@
                 </router-link>
             </li>
         </ul>
-        <div class="begin">
-            马上开始
-        </div>
+        <router-link to="/vip">
+            <div class="begin">
+                马上开始
+            </div>
+        </router-link>
         <div class="foot">
             在7天免费试用后，您的订阅费将每2个月自动更新39.99美元。
         </div>
