@@ -1,11 +1,21 @@
 <template>
   <div id="app">
-    <h1>开始</h1>
     <router-view/>
+    <FooterTab></FooterTab>
   </div>
 </template>
+<script>
+  import FooterTab from "./components/footerTab.vue";
 
+  export default {
+    name: "app",
+    components: {FooterTab},
+  
+  };
+  </script>
 <style lang="scss">
+*{margin:0;padding: 0;}
+li{list-style:none;}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -21,6 +31,11 @@
     &.router-link-exact-active {
       color: #42b983;
     }
+  }
+}
+.router-link-active{
+  &>i{
+    background-position-x: -63px !important;
   }
 }
 </style>
