@@ -35,7 +35,7 @@
            <img src="../assets/img/zhaoxiangji.png" alt="">
        </div>
        <div class="shurukuang">
-           <input type="text" placeholder="输入信息..." v-model="value"  @keyup.enter="sendmessage(value)" style="text-indent:15px" class="chat-input">
+           <input type="text" placeholder="输入信息..." v-model="value"  @keyup.enter="sendmessage(value)" style="text-indent:15PX" class="chat-input">
        </div>
        <div class="send"
         @click="sendmessage(value)">
@@ -46,9 +46,9 @@
 </template>
 
 <script>
- import {gethobby} from "../API/index.js"
+ import {gethobby} from "../api/index.js";
   //import {hobbyList} from "./search"
-  import {getUserDataById} from "../API/index.js";
+  import {getUserDataById} from "../api/index.js";
 export default {
   name: 'chat',
   
@@ -99,28 +99,29 @@ export default {
  }
 </script>
 
-<style lang="scss" >
+<style lang="scss" scoped >
 
    @import "../assets/font_1347279_qkkqrxx20qj/iconfont.css";
    .top{
        display: flex;
        justify-content: space-around;
        align-items: center;
-       height: 66px;
-       line-height: 66px;
+       height: 66PX;
+       line-height: 66PX;
        text-align: center;
+       border-bottom: 1px solid #ccc;
+       margin-bottom: 10PX;
    }
-    .userpic{
-        padding-top: 25px;
-    }
+
    .userpic img{
-       width: 43px;
-       height: 43px;
-       border-radius: 50px;
-       margin-right: 10px;
+       width: 43PX;
+       height: 43PX;
+       border-radius: 50PX;
+       margin-right: 10PX;
    }
    .username{
-       width: 250px;
+       width: 250PX;
+       font-size: 20PX;
    }
    .clearfix:after {
     content: "";
@@ -132,26 +133,28 @@ export default {
     zoom: 1;
 }
 .demo {
-    margin-bottom:10px;
-    padding-left:30px;
+    margin-bottom:10PX;
+    padding-left:30PX;
     position:relative;
 }
- 
+.iconfont{
+font-size: 30PX;
+}
 .triangle {
     position:absolute;
     top:50%;
-    margin-top:-8px;
-    left:22px;
+    margin-top:-8PX;
+    left:22PX;
     display:block;
     width:0;
     height:0;
     overflow:hidden;
     line-height:0;
     font-size:0;
-    border-bottom:8px solid #FFF;
-    border-top:8px solid #FFF;
+    border-bottom:8PX solid #FFF;
+    border-top:8PX solid #FFF;
     border-left:none;
-    border-right:8px solid #efefef;
+    border-right:8PX solid #efefef;
 }
  
 .demo .mysay {
@@ -159,34 +162,36 @@ export default {
     color:#000;
     display:inline-block;
     display:inline; zoom:1;
-    padding:5px 10px;
-    border:1px solid #efefef;
+    padding:5PX 10PX;
+    border:1PX solid #efefef;
     background:#eee;
-    border-radius:8px;
+    border-radius:8PX;
     background-color: #efefef;
+    font-size: 16PX;
 }
 .demo .usersay {
     float:left;
     color:#000;
     display:inline-block;
     display:inline; zoom:1;
-    padding:5px 10px;
-    border:1px solid #efefef;
+    padding:5PX 10PX;
+    border:1PX solid #efefef;
     background:#eee;
-    border-radius:8px;
+    border-radius:8PX;
     background-color: #efefef;
      background-image:-webkit-gradient(linear,left top,right bottom,from(#ff816e),to(#ff62a5));
+       font-size: 16PX;
 }
  
-.fr { padding-left:0px; padding-right:30px; }
+.fr { padding-left:0PX; padding-right:30PX; }
  
 .fr .triangle {
     left:auto;
-    right:24px;
-    border-bottom:8px solid #FFF;
-    border-top:8px solid #FFF;
+    right:24PX;
+    border-bottom:8PX solid #FFF;
+    border-top:8PX solid #FFF;
     border-right:none;
-    border-left:8px solid #ff62a5;
+    border-left:8PX solid #ff62a5;
 }
  
 .fr .article {
@@ -195,31 +200,35 @@ export default {
 .bottom{
     width: 100%;
     display: flex;
-    height: 80px;
+    height: 80PX;
     justify-content: space-around;
     position: fixed;
-    bottom: 0;
+    bottom: 0PX;
     left: 0;
-    padding-top: 12px;
-    border-top: 1px solid #dbdae3;
+    padding-top: 12PX;
+    border-top: 1PX solid #dbdae3;
 }
 .bottom img{
-    width: 30px;
+    width: 30PX;
 }
 .bottom input{
-    width: 260px;
-    height: 41px;
-    border-radius: 8px;
+    width: 260PX;
+    height: 41PX;
+    border-radius: 8PX;
     border:none;
-    border: 1px solid #dbdae3;
+    border: 1PX solid #dbdae3;
 }
 .bottom .send{
-    margin-right: 5px;
+    margin-right: 5PX;
 }
 input {
  caret-color:#ff8960;
      }
 .content{
     text-align: center;
+}
+.time{
+    font-size: 16PX;
+    margin-bottom: 5px;
 }
 </style>

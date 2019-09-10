@@ -10,6 +10,7 @@
 </template>
 <script>
   import FooterTab from "./components/footerTab.vue";
+  import router from "./router.js";
 
   export default {
     name: "app",
@@ -49,5 +50,7 @@
     background-position-x: -63px !important;
   }
 }
-
+.van-field__body{
+  font-size: 16px!important;
+}
 </style>

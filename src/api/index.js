@@ -24,3 +24,10 @@ export const GetUserList = () => {
         url
     })
 };
+export const gethobby = () => {
+    var url = 'http://localhost:3000/login';
+    return Axios({
+        url,
+        method: 'get',
+    });
+};

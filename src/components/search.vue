@@ -10,7 +10,7 @@
             <div class="tag">搜索标签</div>
         </div>
         <div class="sousuokuang">
-            <input placeholder="音乐" clearable style="text-indent:73px"  class="search-input"/>
+            <input placeholder="音乐" clearable style="text-indent:73PX;font-size:15PX"  class="search-input"/>
             <span class="searchNum">{{hobbyList.length}}</span>
         </div>
       </div>
@@ -44,7 +44,7 @@
 
 import Vue from 'vue';
 import { Tag } from 'vant';
- import {gethobby} from "../API/index.js"
+ import {gethobby} from "../api/index.js"
 Vue.use(Tag);
 export default {
   name: '',
@@ -87,15 +87,15 @@ export default {
  }
   .mytop{
     width: 100%;
-    height: 133px;
+    height: 133PX;
      position: fixed;
      top: 0;
-    z-index: 9999;
-    background-color: #fff;
+        z-index: 9999;
+        background-color: #fff;
   }
  .search-top{
-        height: 58px;
-        line-height: 58px;
+        height: 58PX;
+        line-height: 58PX;
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -103,42 +103,43 @@ export default {
       }
   a{ color:#000;
  display:block;
- width: 52px
+ width: 52PX
  }
 .tag{
-   font-size:16px;
+   font-size:16PX;
   flex: 1;
     }  
 .search-input{
-    width: 330px!important;
-    height: 49px!important;
-    border-radius: 8px;
+    width: 330PX!important;
+    height: 49PX!important;
+    border-radius: 8PX;
     border: none;
     background-color: #e6e6e6;
      position:relative;
-    line-height: 58px;
+    line-height: 58PX;
     }
 .searchNum{
-    border-radius: 8px;
+    border-radius: 8PX;
      background-image:-webkit-gradient(linear,left top,right bottom,from(#ff816e),to(#ff62a5));
      color: #fff;
-      padding:0 10px;
-      height: 26px;
+      padding:0 10PX;
+      height: 26PX;
       display: inline-block;
       position: absolute;
-      left:17px;
+      left:17PX;
       top:25%; 
-      line-height: 26px;
+      line-height: 26PX;
+      font-size: 16PX;
       }
  .sousuokuang{
      position:fixed;
-     top:58px;
-     left: 20px;
-     margin: 14px 0px;
+     top:58PX;
+     left: 20PX;
+     margin: 14PX 0PX;
      }
 .search-list{
-    margin-top: 133px;
-     border-top: 1px solid #ccc;
+    margin-top: 133PX;
+     border-top: 1PX solid #ccc;
      display: flex;
      flex-direction: column;
      flex: 1;
@@ -148,43 +149,55 @@ export default {
 }
 .list-item{
     display: flex;
-    justify-content: space-around;
-    height: 110px;
+    
+    height: 110PX;
     box-sizing: border-box;
-    // padding-top: 20px;
+    // padding-top: 20PX;
      align-items: center
    
 }
 .userimg{
-    margin-left: 10px;
+    margin: 0 20PX;
 }
 .userimg img{
-    width: 65px;
-    height: 70px;
+    width: 65PX;
+    height: 70PX;
     border-radius: 50%;
 }
 .girl {
-    width: 12px;
+    width: 12PX;
 }
 .username{
-    font-size: 14px;
+    display: flex;
+    // justify-content: space-around;
+    font-size: 14PX;
     font-weight: 300;
-    margin-bottom: 8px;
+   align-items: center;
 }
 .name{
-    font-size: 16px;
+    font-size: 16PX;
     font-weight: 700;
 }
 .van-tag{
-    margin: 0 4px 0 0;
+    margin: 0 4PX 0 0;
+    font-size: 13PX;
+    
 }
 .username .sexbox{
-    border-radius: 7px;
-   width: 26px;
-   padding: 0 5px;
-   height: 16px;
-   line-height: 16px;
+    border-radius: 7PX;
+   width: 40PX;
+   padding: 0 5PX;
+   height: 16PX;
+   line-height: 16PX;
    color: #fff;
-   margin-left: 8px;
+   margin-left: 8PX;
+   display: flex;
+   justify-content: space-around
+}
+.van-field__body{
+    font-size: 15PX!important;
+}
+.icon-left{
+    font-size: 30PX;
 }
 </style>

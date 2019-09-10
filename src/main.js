@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import axios from 'axios'
-import router from './routers/router.js'
+import router from './router.js'
 import store from './store'
 
 // import MintUI from 'mint-ui'

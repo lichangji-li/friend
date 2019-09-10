@@ -8,6 +8,9 @@ import Vip from './views/Vip.vue'
 import FreeVip from './views/freeVip.vue'
 import Nearby from './views/Nearby/index.vue'
 import Screen from './views/Nearby/Screen.vue'
+import message from './components/message.vue'
+import chat from './components/chat.vue'
+import search from './components/search.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -63,6 +66,9 @@ export default new Router({
       path: '/screen',
       name: 'screen',
       component: Screen
-    }
+    },
+    { path: '/message',name: 'message',component: message },
+    { path: '/chat',name: 'chat',component: chat },
+    { path: '/search',name: 'search',component: search },
   ]
 })
