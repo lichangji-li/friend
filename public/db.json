@@ -1,0 +1,302 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "login": [{
+    "id": 1,
+    "username": "changran",
+    "password" : "123456",
+    "name": "怅然",
+    "hot": "false",
+    "imgs": [
+      "changran-01.jpg",
+      "changran-02.jpg",
+      "changran-03.jpg"
+    ],
+    "addr": ["广东","深圳"],
+    "hoppy" : ["音乐","运动","电影","跳舞"],
+    "about": "路过是缘分，有缘是朋友，有空就约我吧……",
+    "mydata": {
+      "sex": "女",
+      "age": "20",
+      "height": "166cm",
+      "love": "单身",
+      "time": "2018/09/04"
+      },
+    "user": {
+      "fk": 1000,
+      "tl": 15,
+      "pp": 5
+    }
+  },
+    {
+      "id": 2,
+      "username": "chenhonghong",
+      "password" : "123456",
+      "imgs": [
+        "chenhonghong-01.jpg",
+        "chenhonghong-02.jpg",
+        "chenhonghong-03.jpg",
+        "chenhonghong-04.jpg",
+        "chenhonghong-05.jpg"
+      ],
+      "hot": "false",
+      "mydata": {
+        "sex": "女",
+        "age": "21",
+        "height": "165cm",
+        "love": "单身",
+        "time": "2018/10/04"
+      },
+      "name": "陈红红",
+      "addr": ["广东","广州"],
+      "hoppy" : ["音乐","运动","电影","游泳"],
+      "about": "重视感觉，感觉对就在一起，感觉不对就不勉强",
+      "user": {
+        "fk": 500,
+        "tl": 10,
+        "pp": 7
+      }
+    },
+    {
+      "id": 3,
+      "username": "lantian",
+      "password" : "123456",
+      "imgs": [
+        "lantian-01.jpg",
+        "lantian-02.jpg",
+        "lantian-03.jpg",
+        "lantian-04.jpg"
+      ],
+      "hot": "true",
+      "name": "蓝天",
+      "addr": ["广东","广东"],
+      "hoppy" : ["音乐","运动","电影","运动"],
+      "about": "我的好，一定要在交往中慢慢体会",
+      "mydata": {
+        "sex": "女",
+        "age": "20",
+        "height": "155cm",
+        "love": "单身",
+        "time": "2019/09/8"
+      },
+      "user": {
+        "fk": 2051,
+        "tl": 9,
+        "pp": 3
+      }
+    },
+    {
+      "id": 4,
+      "username": "lianyi",
+      "password" : "123456",
+      "imgs": [
+        "lianyi-01.jpg",
+        "lianyi-02.jpg",
+        "lianyi-03.jpg",
+        "lianyi-04.jpg",
+        "lianyi-05.jpg"
+      ],
+      "hot": "false",
+      "name": "林艺",
+      "addr": ["广东","广东"],
+      "hoppy" : ["音乐","运动","电影"],
+      "about": "如果有合适的人，在不久的将来我会结婚",
+      "mydata": {
+        "sex": "女",
+        "age": "24",
+        "height": "167cm",
+        "love": "单身",
+        "time": "2019/04/8"
+      },
+      "user": {
+        "fk": 354,
+        "tl": 12,
+        "pp":7
+      }
+    },
+    {
+      "id": 5,
+      "username": "lili",
+      "password" : "123456",
+      "imgs": [
+         "lili-01.jpg",
+         "lili-02.jpg",
+         "lili-03.jpg"
+      ],
+      "hot": "false",
+      "name": "莉莉",
+      "addr": ["广东","广州"],
+      "hoppy" : ["音乐","运动","电影"],
+      "about": "其实随着时间的推移,一切都已经淡忘.有那么多恨吗?那说明你还没有完全走出来.爱恨一直都是交织在一起的.没爱就没恨.",
+      "mydata": {
+        "sex": "女",
+        "age": "19",
+        "height": "153cm",
+        "love": "单身",
+        "time": "2019/05/8"
+      },
+      "user": {
+        "fk": 214,
+        "tl": 24,
+        "pp": 4
+      }
+    },
+    {
+      "id": 6,
+      "username": "linmeng",
+      "password" : "123456",
+      "imgs" : [
+        "linmeng-01.jpg",
+        "linmeng-02.jpg",
+        "linmeng-03.jpg",
+        "linmeng-04.jpg"
+      ],
+      "hot": "true",
+      "name": "林梦",
+      "addr": ["广东","珠海"],
+      "hoppy" : ["音乐","运动","电影"],
+      "about": "什么叫缘份呢？我是这样理解的，有缘认识，但是有没有份就要你去努力争取了，哪怕失败了也不悔！",
+      "mydata": {
+        "sex": "女",
+        "age": "24",
+        "height": "171cm",
+        "love": "单身",
+        "time": "2018/05/1"
+      },
+      "user": {
+        "fk": 1534,
+        "tl": 20,
+        "pp": 9
+      }
+    },
+    {
+      "id": 7,
+      "username": "liuhuihui",
+      "password" : "123456",
+      "imgs" : [
+        "liuhuihui-01.jpg",
+        "liuhuihui-02.jpg",
+        "liuhuihui-03.jpg",
+        "liuhuihui-04.jpg",
+        "liuhuihui-05.jpg",
+        "liuhuihui-06jpg"
+      ],
+      "hot": "false",
+      "name": "刘慧慧",
+      "addr": ["广东","深圳"],
+      "hoppy" : ["音乐","运动","电影","游戏"],
+      "about": "我不在意，谁高谁低都一样＃内心深处还是介意的，但是我会努力改变现状。",
+      "mydata": {
+        "sex": "女",
+        "age": "32",
+        "height": "163cm",
+        "love": "单身",
+        "time": "2019/07/8",
+        "user": {
+          "fk": 533,
+          "tl": 43,
+          "pp": 1
+        }
+      }
+    },
+    {
+      "id": 8,
+      "username": "shuchang",
+      "password" : "123456",
+      "imgs" : [
+        "shuchang-01.jpg",
+        "shuchang-02.jpg",
+        "shuchang-03.jpg"
+      ],
+      "hot": "true",
+      "name": "舒畅",
+      "addr": ["广东","深圳"],
+      "hoppy" : ["音乐","运动","电影","跳舞"],
+      "about": "能和相爱的人在一起，做什么都特别开心．你认为呢?",
+      "mydata": {
+        "sex": "女",
+        "age": "20",
+        "height": "160cm",
+        "love": "单身",
+        "time": "2019/06/8",
+        "user": {
+          "fk": 244,
+          "tl": 14,
+          "pp": 6
+        }
+      }
+    },
+    {
+      "id": 9,
+      "username": "youran",
+      "password" : "123456",
+      "imgs" : [
+        "youran-01.jpg",
+        "youran-02.jpg",
+        "youran-03.jpg"
+      ],
+      "hot": "false",
+      "name": "悠然",
+      "addr": ["广东","惠州"],
+      "hoppy" : ["音乐","运动","电影","美食"],
+      "about": "说梦想是要“赚多少钱，要变成老板、CEO、有钱人、富人，然后实现什么什么梦想的”都很俗，要成为怎么样的人不在说，而在心！",
+      "mydata": {
+        "sex": "女",
+        "age": "28",
+        "height": "170cm",
+        "love": "单身",
+        "time": "2019/05/7",
+        "user": {
+          "fk": 635,
+          "tl": 10,
+          "pp": 1
+        }
+      }
+    },
+    {
+      "id": 10,
+      "username": "yuyu",
+      "password" : "123456",
+      "imgs" : [
+        "yuyu-01.jpg",
+        "yuyu-02.jpg",
+        "yuyu-03.jpg",
+        "yuyu-04.jpg",
+        "yuyu-05.jpg",
+        "yuyu-06.jpg"
+      ],
+      "hot": "false",
+      "name": "钰钰",
+      "addr": ["广东","佛山"],
+      "hoppy" : ["音乐","运动","电影","旅游"],
+      "about": "追求完美，做事认真讲原则博爱，乐于助人，感情直接事业至上，看重成就和影响力感性自我，向往浪漫和不平凡",
+      "mydata": {
+        "sex": "女",
+        "age": "20",
+        "height": "155cm",
+        "love": "单身",
+        "time": "2019/02/5",
+        "user": {
+          "fk": 1400,
+          "tl": 10,
+          "pp": 5
+        }
+      }
+    }
+  ]
+}
