@@ -1,11 +1,23 @@
 <template>
   <div id="app">
-    <h1>开始</h1>
     <router-view/>
   </div>
 </template>
 
 <style lang="scss">
+  *{
+    margin: 0;
+    padding: 0;
+    img{
+      display: block;
+    }
+    a{
+      text-decoration: none;
+    }
+    ul,li{
+      list-style: none;
+    }
+  }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
