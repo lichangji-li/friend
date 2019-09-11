@@ -11,23 +11,43 @@ import Screen from './views/Nearby/Screen.vue'
 import message from './components/message.vue'
 import chat from './components/chat.vue'
 import search from './components/search.vue'
+import Search from "./views/Search";
+import Search_tag from "./views/Search/search_tag.vue";
+import Detail from "./views/Search/detail.vue";
 Vue.use(Router)
 
+
 export default new Router({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
-      name: 'home',
+      path: "/",
+      name: "home",
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
+      path: "/search",
+      name: "search",
+      component: Search
+    },
+    {
+      path: "/tag",
+      name: "search_tag",
+      component: Search_tag
+    },
+    {
+      path: "/detail:id",
+      name: "Detail",
+      component: Detail
+    },
+    {
+      path: "/about",
+      name: "about",
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
+
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
     {
@@ -70,5 +90,6 @@ export default new Router({
     { path: '/message',name: 'message',component: message },
     { path: '/chat',name: 'chat',component: chat },
     { path: '/search',name: 'search',component: search },
+
   ]
-})
+});
