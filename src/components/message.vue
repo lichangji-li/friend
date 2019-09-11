@@ -1,41 +1,50 @@
 <template>
-  <div>
-    <mu-paper :z-depth="1" class="demo-list-wrap">
-      <div class="message-top">
-        <mu-appbar background-color="#f5f5f5">
-          <span class="infos">消息</span>
-        </mu-appbar>
-        <!-- 搜索 -->
-        <van-search placeholder="搜索..." style="text-indent:10px;" @change="tosearch()" />
-      </div>
-    </mu-paper>
-    <div class="messageBox">
-      <div
-        class="mymessage"
-        v-for="(ele,index) in hobbyList"
-        :key="index++"
-        @click="getChatBox(ele.id)"
-      >
-       <van-swipe-cell>
-          <van-cell :border="false">
-          <div class="messageitem"  @click="getChatBox(ele.id)">
-            <div class="messageleft">
-              <img :src="`../../imgs/${ele.imgs[0]}`" alt />
+    
+          <mu-paper :z-depth="1" class="demo-list-wrap">
+            <div class="message-top">
+              <mu-appbar background-color="#f5f5f5">
+     <span class="infos">消息</span>
+  </mu-appbar>
+  <!-- 搜索 -->
+      <van-search placeholder="搜索..." style="text-indent:5PX;" v-model="value" @change="tosearch()"/>
             </div>
-            <div class="messageright">
-              <p class="uname">{{ele.name}}</p>
-              <p class="messageinfos">{{ele.about}}</p>
-            </div>
-          </div>
-          </van-cell>
-          <template slot="right">
-            <van-button square type="danger" text="删除" @click="remove(ele.id)"/>
-         </template>
-       </van-swipe-cell>
-      </div>
-    </div>
+  
+      <div class="message-content">
+       <mu-list textline="three-line" v-for="(ele,index) in hobbyList" :key='index'>  
+     <!-- <mu-sub-header>今天</mu-sub-header>  -->
+       <!-- 删除滑动插件，提供2个插槽，这里只用了一个插槽，左侧插槽是向右滑显示的内容 ，van-cell是两侧插槽包裹的部分 ，右侧插槽就是左滑显示内容-->
+          <van-swipe-cell>
+            <!-- 两侧插槽包裹区域 -->
+            <van-cell :border="false">
+            <!-- <router-link to='/chat'> -->
+        <mu-list-item avatar :ripple="false" button  @click="getChatBox(ele.id)">
+     <mu-list-item-action>
+        <mu-avatar>
+          <!-- <img :src="../assets/img/touxiang1.jpg"> -->
+           <img :src="`../../imgs/${ele.imgs[0]}`" alt="">
+        </mu-avatar>
+      </mu-list-item-action>
+      <mu-list-item-content>
+        <mu-list-item-title>{{ele.name}}</mu-list-item-title>
+        <mu-list-item-sub-title>
+          <span style="color: rgba(0, 0, 0, .87)"></span> {{ele.about}}
+        </mu-list-item-sub-title>
+      </mu-list-item-content>
+    </mu-list-item>
+       <!-- </router-link> -->
+       </van-cell>
+       <!-- 右侧插槽，左滑显示删除-->
+        <template slot="right" >
+          <van-button square type="danger" text="删除" @click="remove(ele.id)"/>
+        </template>
+      </van-swipe-cell>
+      <mu-divider></mu-divider>  
+        </mu-list> 
   </div>
+</mu-paper>
 </template>
+
+
 
 <script>
 import Vue from "vue";
@@ -91,105 +100,62 @@ export default {
 <style lang="scss" >
 @import "../../node_modules/vant/lib/index.css";
 
-.message-top {
-  height: 260px;
-  position: fixed;
-  top: 0px;
+
+.message-top{
+   height: 131PX;
+   position: fixed;
+   top: 0PX;
+   width: 100%;
+   z-index: 9999;
+ }
+ .message-content{
+   margin-top: 131PX;
+   flex: 1;
+   margin-bottom: 67.5PX;
+ }
+  .demo-list-wrap {
   width: 100%;
-  z-index: 9999;
-}
-.mu-appbar,
-.mu-elevation-4 {
-  height: 176px !important;
-}
-.messageBox {
-  margin-top: 260px;
-  // flex: 1;
+  max-width: 375PX;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
-  padding-bottom: 136px;
 }
-.van-search {
-  display: flex;
-  justify-content: space-around;
-  border-bottom: 1px solid #b2b2b2;
-  height: 100px;
-  line-height: 80px;
+.van-search ,.van-search--show-action{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1PX solid #b2b2b2;
+   height: 75PX;
 }
-.van-cell {
-  background-color: #e6e6e6 !important;
-  border-radius: 40px;
+.van-cell{
+        background-color: #e6e6e6!important;
+        border-radius: 20PX;
 }
 .van-field__left-icon {
-  margin-left: 20px !important;
+    margin-left: 10PX!important;
 }
-.messageleft {
-  width: 170px;
-  height: 198px;
-  padding-top: 50px;
-  box-sizing: border-box;
+.mu-list{
+ overflow: hidden;
+ padding: 0PX;
 }
-.messageleft img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-left: 20px;
+.van-button--normal {
+  height: 100%;
 }
+.van-cell{
+  background-color: #fff!important;
+  border-radius: none!important;
+  padding: 0 0PX 0 0PX;
 
-.van-cell {
-  background-color: #fff !important;
-  border-radius: none !important;
-  padding: 0 0px 0 0px;
 }
-.van-field {
-  background-color: #e6e6e6 !important;
-  height: 70px;
-  align-items: center;
-}
-
-.infos {
-  font-size: 40px;
-  font-weight: 600;
-}
-.messageitem {
-  display: flex;
-  // justify-content: space-around;
-  border-bottom: 1px solid #ccc;
-  overflow: hidden;
-  width: 100%;
-}
-.messageright {
-  height: 204px;
-  display: flex;
-  // flex: 1;
-  flex-direction: column;
-  padding-top: 70px;
-  width: 200PX;
-}
-.uname {
-  font-size: 36px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-.messageinfos {
-  font-size: 30px;
-  color: gray;
-  line-height: 50px;
-}
-.van-field__body {
-  font-size: 16px !important;
-}
- .van-button--square{
-   height: 100%;
-  
- }
- .van-swipe-cell__wrapper{
-   width:100%;
- }
-.van-swipe-cell__right{
-width: 200PX!important;
-}
+.van-field{
+   background-color: #e6e6e6!important;
+   height: 35PX;
+   align-items: center;
+}   
+ .mu-avatar img {
+   height: 50PX;
+   width: 50PX;
+   margin-top: 8PX;
+ } 
 
 //  van-button--danger van-button--normal van-button--square
 </style>
