@@ -4,7 +4,7 @@
     <div class="allSerch">
       <div class="all-btn">
         <button class="col-btn btn-all" @click="isshow='v-a'">
-          <i class="thisI">34</i>
+          <i>34</i>
           <span>所有类别</span>
           <img src="../assets/images/collect-picm_09.png" alt v-if="show" @click="ptOpenDowOrUp()" />
           <img src="../assets/images/collect-picm_11.png" alt v-else @click="ptOpenDowOrUp()" />
@@ -108,7 +108,7 @@ button {
 }
 .btn-all i {
   background: linear-gradient(to right top, #ff6b95, #ff8960);
-  display: block;
+  display: inline-block;
   font-style: normal;
   color: #fff;
   padding: 2px 13px;
@@ -177,7 +177,7 @@ button {
 }
 .col-content ul li i {
   height: 31px;
-  width: 80px;
+  width: 64px;
   font-size:22px;
   font-style: normal;
   position: absolute;
@@ -188,12 +188,8 @@ button {
   background-size: 64px 31px;
   display: block;
   color: #fff;
-  padding-left:30px;
-  padding-bottom:10px;
+  padding-left:10px;
+  padding-bottom:px;
   background-repeat:no-repeat;
-
 }
-  .thisI{
-    width: 60px;height: 40px;font-size: 30px;
-  }
 </style>

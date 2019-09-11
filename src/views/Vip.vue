@@ -2,7 +2,7 @@
     <div class="box">
         <div class="head">
             <div class="top">
-                    <p @click="goBack">&lt</p>
+                    <span @click="goBack">&lt</span>
                 <b>vip中心</b>
                 <router-link to="1">
                     <p>历史</p>
@@ -148,7 +148,6 @@
     .begin{
         width: 686px;height: 90px;background-image: url("../assets/userimgs/vip08.png");
         background-repeat: no-repeat;background-size: 100% 100%;margin-left: 34px;font-size: 34px;color: #ffffff;line-height: 90px;
-        text-align: center;
     }
     .box{
         margin-bottom: 170px;
