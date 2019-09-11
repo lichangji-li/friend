@@ -115,7 +115,7 @@ export default {
  }
   .demo-list-wrap {
   width: 100%;
-  max-width: 375PX;
+  // max-width: 375PX;
   overflow: hidden;
   display: flex;
   flex-direction: column;
