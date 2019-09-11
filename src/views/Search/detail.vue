@@ -140,6 +140,7 @@ html {
   height: 100%;
 }
 .detail {
+  margin-bottom: 120px;
   width: 750px;
   position: relative;
   background: url(../../assets/imgs/z_img/beijin03.png) no-repeat;

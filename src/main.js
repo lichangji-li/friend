@@ -3,17 +3,16 @@ import App from './App.vue'
 import axios from 'axios'
 import router from './router.js'
 import store from "./store/index.js";
-
 // import MintUI from 'mint-ui'
 // import 'mint-ui/lib/style.css'
 import MuseUi from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css';
 import iView from 'iview';
 
-import Vant from 'vant';
 import "amfe-flexible";
 
 import Vant from "vant";
+
 import "vant/lib/index.css";
 
 //挂载swiper

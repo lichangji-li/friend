@@ -119,6 +119,7 @@
         },
         methods:{
             getDatas(){
+
                 getUserDataById(1).then((res)=> {
                     this.allData = res.data[0];
                     this.hearImg = res.data[0].imgs[0];

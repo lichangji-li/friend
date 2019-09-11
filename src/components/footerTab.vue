@@ -2,7 +2,7 @@
   <div>
     <ul class="footerTab">
       <li>
-        <router-link to="/index">
+        <router-link to="/home">
         <i></i>
         </router-link>
       </li>

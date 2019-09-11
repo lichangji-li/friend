@@ -24,10 +24,10 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: Home
+      component: Search
     },
     {
-      path: "/search",
+      path: "/home",
       name: "search",
       component: Search
     },
