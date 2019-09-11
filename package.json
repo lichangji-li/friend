@@ -9,11 +9,13 @@
   },
   "dependencies": {
     "amfe-flexible": "^2.2.1",
+    "axios": "^0.19.0",
     "core-js": "^2.6.5",
+    "node-json-db": "^1.0.1",
     "postcss-px2rem": "^0.3.0",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
-    "vuex": "^3.0.1"
+    "vuex": "^3.1.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
@@ -25,6 +27,7 @@
     "lint-staged": "^8.1.5",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
+    "vant": "^2.2.0",
     "vue-template-compiler": "^2.6.10"
   },
   "gitHooks": {
