@@ -99,7 +99,7 @@ export default {
  }
 </script>
 
-<style lang="scss" scoped >
+<style lang="scss"  >
 
    @import "../assets/font_1347279_qkkqrxx20qj/iconfont.css";
    .top{
@@ -207,6 +207,8 @@ font-size: 30PX;
     left: 0;
     padding-top: 12PX;
     border-top: 1PX solid #dbdae3;
+    z-index: 9999;
+    background-color: #fff;
 }
 .bottom img{
     width: 30PX;
