@@ -2,7 +2,7 @@
     <div class="box">
         <div class="head">
             <div class="top">
-                    <span @click="goBack">&lt</span>
+                    <span @click="goBack" class="addspan">&lt</span>
                 <b>编辑资料</b>
                 <router-link to="/user">
                     <p>完成</p>
@@ -298,5 +298,8 @@
     }
     .jia{
         display: block;width: 50px;height: 50px;color: red;font-size: 80px;font-weight: 800;margin: auto;
+    }
+    .addspan{
+        line-height: 50px;
     }
 </style>

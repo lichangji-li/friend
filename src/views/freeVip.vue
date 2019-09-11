@@ -3,7 +3,7 @@
         <div class="topall">
             <div class="head">
                 <div class="top">
-                        <span @click="goBack">&lt</span>
+                        <p @click="goBack" class="addspan">&lt</p>
                     <b>免费vip升级</b>
                     <router-link to="1">
                         <p>跳过</p>
@@ -165,9 +165,13 @@
     .begin{
         width: 686px;height: 90px;background-image: url("../assets/userimgs/vip08.png");
         background-repeat: no-repeat;background-size: 100% 100%;margin-left: 34px;font-size: 34px;color: #ffffff;line-height: 90px;
+    text-align: center;
     }
     .foot{
         width: 650px;height: 164px;font-size: 30px;
         color: #4a4a4a;margin-left: 48px;text-align: center;margin-top: 94px;
+    }
+    .box{
+        margin-bottom: 100px;
     }
 </style>
