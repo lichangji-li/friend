@@ -104,7 +104,7 @@ export default {
 }
 .messageBox {
   margin-top: 260px;
-  flex: 1;
+  // flex: 1;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
@@ -154,7 +154,7 @@ export default {
 }
 .messageitem {
   display: flex;
-  justify-content: space-around;
+  // justify-content: space-around;
   border-bottom: 1px solid #ccc;
   overflow: hidden;
   width: 100%;
@@ -162,9 +162,10 @@ export default {
 .messageright {
   height: 204px;
   display: flex;
-  flex: 1;
+  // flex: 1;
   flex-direction: column;
   padding-top: 70px;
+  width: 200PX;
 }
 .uname {
   font-size: 36px;
@@ -186,5 +187,9 @@ export default {
  .van-swipe-cell__wrapper{
    width:100%;
  }
+.van-swipe-cell__right{
+width: 200PX!important;
+}
 
+//  van-button--danger van-button--normal van-button--square
 </style>

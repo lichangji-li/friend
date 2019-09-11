@@ -233,4 +233,10 @@ input {
     font-size: 16PX;
     margin-bottom: 5px;
 }
+.camera{
+    padding-top: 5PX;
+}
+.chat-input{
+    font-size: 16PX;
+}
 </style>
