@@ -53,4 +53,5 @@
 .van-field__body{
   font-size: 16px!important;
 }
+
 </style>

@@ -135,7 +135,7 @@ export default {
 }
 .mu-list{
  overflow: hidden;
- padding: 0PX;
+ padding: 0PX!important;
 }
 .van-button--normal {
   height: 100%;
