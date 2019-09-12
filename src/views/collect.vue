@@ -5,7 +5,7 @@
       <div class="all-btn">
         <button class="col-btn btn-all" @click="isshow='v-a'">
           <i>34</i>
-          <span>所有类别</span>
+          <span class="alllei">所有类别</span>
           <img src="../assets/images/collect-picm_09.png" alt v-if="show" @click="ptOpenDowOrUp()" />
           <img src="../assets/images/collect-picm_11.png" alt v-else @click="ptOpenDowOrUp()" />
         </button>
@@ -97,7 +97,7 @@ button {
 }
 .col-btn {
   height: 80px;
-  width: 684px;
+  width: 750px;
   padding: 18px 24px 18px 24px;
   background-color: #e6e6e6;
   border: none;
@@ -108,8 +108,10 @@ button {
 }
 .btn-all i {
   background: linear-gradient(to right top, #ff6b95, #ff8960);
-  display: inline-block;
+  display: block;
+  width: 60px;
   font-style: normal;
+  font-size: 30px;
   color: #fff;
   padding: 2px 13px;
   border-radius: 20px;
@@ -127,6 +129,7 @@ button {
   top: 17px;
   font-size: 34px;
   color: #4a4a4a;
+
 }
 .btn-like,
 .btn-love {
@@ -188,8 +191,8 @@ button {
   background-size: 64px 31px;
   display: block;
   color: #fff;
-  padding-left:10px;
-  padding-bottom:px;
+  padding-left:30px;
+  padding-bottom:10px;
   background-repeat:no-repeat;
 }
 </style>

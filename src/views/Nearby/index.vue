@@ -50,7 +50,7 @@ export default {
     justify-content: space-between;
     padding: 0 10px;
     align-items: center;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
     .el-icon-s-operation {
       border-radius: 50%;
@@ -58,6 +58,9 @@ export default {
       color: #fff;
       padding: 5px;
     }
+  }
+  .el-tabs__item{
+    font-size: 30px;
   }
   .el-tabs__active-bar {
     background: #ff689a;
