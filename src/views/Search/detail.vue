@@ -200,8 +200,8 @@ html {
         }
         .span2 {
           display: block;
-          width: 50px;
-          height: 25px;
+          width: 60px;
+          height:40px;
           margin-top: 10px;
           font-size: 12px;
           background: url(../../assets/imgs/z_img/beijin02.png) no-repeat;

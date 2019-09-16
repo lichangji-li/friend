@@ -8,9 +8,11 @@
       </div>
     </div>
     <!-- 轮播图开始的地方 -->
-    <div class="myswiper">
-      <myswiper :imgs="BannerListimgs"></myswiper>
-    </div>
+
+      <div class="myswiper" >
+        <myswiper :imgs="BannerListimgs"></myswiper>
+      </div>
+
     <!-- 点击按钮开始的地方 -->
     <div class="Tabs">
       <div class="fanhui iconfont">&#xe6c3;</div>
@@ -38,12 +40,14 @@ export default {
     },
     ...mapMutations('search', ['AddNum', 'AddmyLovelist', 'AddmyCollect']),
     ...mapActions('search', ['getBannerList']),
+    ...mapActions('searchTag', ['getMsg'])
   },
   // 这里开始注册引入的组件:
   components: { myswiper },
 
   created () {
-    this.getBannerList()
+    this.getBannerList(),
+    this.getMsg()
   },
   //真实dom完成:
   mounted () {
@@ -118,6 +122,7 @@ body {
     left: 0;
     padding-left: 5px;
     box-sizing: border-box;
+    text-align: center;
     .fanhui {
       width: 80px;
       height: 80px;

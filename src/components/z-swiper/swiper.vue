@@ -1,9 +1,11 @@
 <template>
   <div class="swiper">
     <van-swipe vertical>
-      <van-swipe-item v-for="(ele,index) in imgs" :key="ele.id">
+      <van-swipe-item v-for="(ele,index) in imgs" :key="ele.id" >
         <div class="s_img">
+          <router-link :to="'/detail'+ele.id">
           <img :src="'/imgs/' + ele.imgs[(ele.imgs.length-1-index)<0 ?0:(ele.imgs.length-1)]" />
+          </router-link>
           <div class="p_first">
             <div class="msg">{{ele.name}}</div>
             <div class="Adress">
@@ -24,7 +26,8 @@
 <script>
 import Vue from 'vue';
 import { Swipe, SwipeItem } from 'vant';
-import { mapGetters } from "vuex";
+/*import { mapGetters } from "vuex";*/
+import { mapActions, mapGetters } from "vuex";
 Vue.use(Swipe).use(SwipeItem);
 export default {
   name: "swiper",
@@ -37,6 +40,12 @@ export default {
   mounted () {
     console.log('swiper', this.$store.state.search.count)
     console.log(this.$store.getters['search/BannerListimgs'])
+  },
+  methods:{
+    ...mapActions('searchTag', ['getMsg'])
+  },
+  created () {
+    this.getMsg()
   },
 }
 </script>
